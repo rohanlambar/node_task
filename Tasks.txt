@@ -1,0 +1,127 @@
+Task 1: Refresh Your Node.js Basics
+Objective: Revise core Node.js concepts and set up a basic server.
+
+Create a simple Node.js server using http or express.
+
+Add routes for:
+
+/ → Returns "Hello, World!"
+
+/about → Returns "About Us"
+
+/contact → Returns "Contact Us"
+
+Use nodemon to automatically restart the server on file changes.
+
+Add a 404 route handler for invalid routes.
+
+Bonus: Use ES6 syntax (e.g., import/export instead of require).
+
+
+Task 2: Build a REST API
+Objective: Create a basic REST API to perform CRUD operations.
+
+Create an in-memory array to store data (e.g., a list of books or movies).
+
+Build the following endpoints:
+
+GET /api/items → Get all items.
+
+GET /api/items/:id → Get a single item by ID.
+
+POST /api/items → Add a new item.
+
+PUT /api/items/:id → Update an item by ID.
+
+DELETE /api/items/:id → Delete an item by ID.
+
+Use Postman or Thunder Client (VS Code extension) to test your API.
+
+Bonus: Add input validation using a library like Joi or express-validator.
+
+
+Task 3: Connect to MongoDB
+Objective: Integrate MongoDB into your project.
+
+Set up a MongoDB database (use MongoDB Atlas for a cloud-based DB or install MongoDB locally).
+
+Use mongoose to connect your Node.js app to MongoDB.
+
+Create a schema for your data (e.g., Book or Movie).
+
+Modify your CRUD operations to interact with the MongoDB database instead of the in-memory array.
+
+Bonus: Add pagination to the GET /api/items endpoint.
+
+Task 4: User Authentication
+Objective: Implement user registration and login.
+
+Create a User schema with fields like name, email, and password.
+
+Use bcrypt to hash passwords before saving them to the database.
+
+Create endpoints:
+
+POST /api/register → Register a new user.
+
+POST /api/login → Log in a user and return a JWT (JSON Web Token).
+
+Use jsonwebtoken to generate and verify JWTs.
+
+Bonus: Add email validation using a library like validator.
+
+Task 5: User Authorization
+Objective: Protect routes based on user roles.
+
+Add a role field to the User schema (e.g., user, admin).
+
+Create middleware to verify the JWT and check the user's role.
+
+Protect certain routes (e.g., only admin users can delete items).
+
+Bonus: Implement role-based access control (RBAC) for multiple roles.
+
+
+Task 6: File Upload
+Objective: Allow users to upload images and other files.
+
+Use multer to handle file uploads.
+
+Create an endpoint to upload an image (e.g., POST /api/upload).
+
+Save the file to a folder (e.g., uploads/) and store the file path in the database.
+
+Serve the uploaded files statically (e.g., http://localhost:3000/uploads/filename.jpg).
+
+Bonus: Add file validation (e.g., only allow images under 5MB).
+
+Task 7: Build a Frontend (Optional)
+Objective: Create a simple frontend to interact with your backend.
+
+Use HTML, CSS, and JavaScript to build a basic UI.
+
+Add forms for user registration, login, and file upload.
+
+Use fetch or axios to interact with your backend API.
+
+Bonus: Use a frontend framework like React or Vue.js.
+
+
+Task 8: Final Project
+Objective: Combine everything into a full-fledged project.
+
+Build a social media app or a blog platform with the following features:
+
+User registration and login.
+
+User roles (e.g., user, admin).
+
+CRUD operations for posts (e.g., create, read, update, delete).
+
+Image upload for posts.
+
+Protected routes (e.g., only logged-in users can create posts, only admins can delete posts).
+
+Deploy your app using a platform like Heroku, Render, or Vercel.
+
+Bonus: Add features like comments, likes, or user profiles.
