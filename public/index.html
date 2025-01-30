@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static file</title>
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+            box-sizing: border-box;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin : 20px 50px 50px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        nav ul li:hover{
+            text-underline-offset: 2px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "This is for revising node and express",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Task1Express.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/rohanlambar/node_task/issues"
   },
-  "homepage": "https://github.com/rohanlambar/node_task#readme"
+  "homepage": "https://github.com/rohanlambar/node_task#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
